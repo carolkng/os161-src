@@ -1,0 +1,76 @@
+# Assignment 1
+
+- Output of `sys161 kernel`
+
+    ```
+    sys161: System/161 release 2.0.3, compiled Sep  7 2018 11:54:20
+
+    OS/161 base system version 1.99.08
+    Copyright (c) 2000, 2001-2005, 2008-2011, 2013, 2014
+    President and Fellows of Harvard College.  All rights reserved.
+
+    Carol's system version 0 (DUMBVM #3)
+
+    292k physical memory available
+    Device probe...
+    lamebus0 (system main bus)
+    emu0 at lamebus0
+    ltrace0 at lamebus0
+    ltimer0 at lamebus0
+    beep0 at ltimer0
+    rtclock0 at ltimer0
+    lrandom0 at lamebus0
+    random0 at lrandom0
+    lhd0 at lamebus0
+    lhd1 at lamebus0
+    lser0 at lamebus0
+    con0 at lser0
+
+    cpu0: MIPS/161 (System/161 2.x) features 0x0
+    OS/161 kernel [? for menu]:
+    ```
+
+- Output of `git log`
+
+    ```
+    commit ec87cfd2d500a8e5a3894621874d244f2ebc3f1b (HEAD -> master, tag: asst0-start)
+    Author: Carol Ng <carol@carolkng.com>
+    Date:   Fri Sep 7 16:33:52 2018 -0700
+
+        Add configure hack
+
+        From OS161 installation instructions [1]:
+
+        When trying to build os161, you might get an error, when the hostcompat
+        library is built, about a redefinition of ntohll in sys/_endian.h.
+
+        [1]: https://sites.google.com/site/os161ubc/os161-installation/install-tools-on-macos
+
+    commit f7394fb881c0710e05f64d2c2190633e8850a14c
+    Author: Carol Ng <carol@carolkng.com>
+    Date:   Fri Sep 7 16:33:04 2018 -0700
+
+        Add .gitignore
+
+    commit 9ae2f1dbd867e426c5062c65252f5ecb1920538e (origin/master, origin/HEAD)
+    Author: Carol Ng <carol@carolkng.com>
+    Date:   Fri Sep 7 12:13:08 2018 -0700
+
+        Add gitignore
+
+    commit 8965b5a48fcbed7012b53716e287cb92beb56593
+    Author: Carol Ng <carol@carolkng.com>
+    Date:   Fri Sep 7 12:08:51 2018 -0700
+
+        Add os161 files
+
+    commit c5c285373ec971f281015999dd591c8e71f246f1
+    Author: Carol Ng <carol.ng@ubc.ca>
+    Date:   Fri Sep 7 19:04:57 2018 +0000
+
+        Initial commit
+    ```
+
+## Questions
+
+1. 
